@@ -3,16 +3,15 @@ import { useEffect } from "react";
 import { useTelegram } from "./hooks/useTelegram";
 import Header from "./components/Header/Header";
 
-const { tg, onToggleButton } = useTelegram;
+const { onToggleButton, tg } = useTelegram;
 
 function App() {
-  useEffect(() => {
-    tg.ready();
-  }, []);
+  // useEffect(() => {
+  //   tg.ready();
+  // }, []);
 
   return (
     <div className="App">
-      <div>dfhjdfhjdhfjd</div>
       <Header />
       <button onClick={onToggleButton}>toggle</button>
     </div>
